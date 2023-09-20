@@ -1,12 +1,16 @@
+//default parameter
+
 const message = (message: string = "Welcome"): string => {
   return message;
 };
 
+//spread operator
 const arrOne: number[] = [1, 2, 3, 4];
 const arrTwo: number[] = [20, 3];
 
 arrTwo.push(...arrOne);
 
+//rest parameter
 const flower = (...value: number[]) => {
   console.log(value);
 };
